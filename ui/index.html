@@ -8,7 +8,7 @@
             <img src="/ui/madi.png" class="img-medium"/>
         </div>
         <br>
-        <div class="center text-big bold">
+        <div id="maintext" class="center text-big bold">
             Hi! I am your Vyom.
 <h2>enjoying learning this course</h2>
         </div>
@@ -16,6 +16,8 @@
             alert('hi i am vyom');
         </script>
         <script type="text/javascript" src="/ui/main.js">
+        var element=document.getelementById("main-text");
+        element.innerHtml="new text";
         </script>
     </body>
 </html>
