@@ -1,3 +1,8 @@
 console.log('Loaded!');
-var element=document.getElementById('maintext');
-        element.innerHTML="new text";
+var button=document.getElementById('counter');
+var counter=0;
+button.onclick=function(){
+    counter=counter+1;
+    var coun=document.getElementById('count');
+        coun.innerHTML=counter.toString();
+};
